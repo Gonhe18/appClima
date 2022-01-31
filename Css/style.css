@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../Img/43391.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.oculto{
+    visibility: hidden;
+    display: none;
+}
+img{
+    width: 100px;
+}
+/* Header */
+.cabeza{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    align-items: center;
+    margin:auto;
+    font-family: 'Limelight', cursive;
+    background-color: rgba(255, 248, 220, 0.5);
+}
+.cabeza2{
+    width: 65%;   
+    display: flex; 
+    align-items: center;
+    padding-left: 3vw;
+    margin: 2vh;
+}
+h2{
+    margin: 2vh;
+    width: 100%;
+    font-size: 2.7rem;
+    color: navy;
+    text-align: right;
+}
+.cabeza p{
+    font-size: 2rem;
+    color: navy;
+    padding-left: 10px;
+}
+/* Panel de consulta - 1er Section */
+#consulta-1{
+    text-align: center;
+    width: 95%;
+    margin:auto;
+    padding: 5vh;
+    background-color: rgba(255, 248, 220, 0.5);  
+    font-family: 'Libre Baskerville', serif;
+}
+#preguntar{
+    font-size: 2rem;
+    margin: 1.5vh;
+    color:black;
+}
+#input-ciudad{
+    font-size: 2rem;
+    margin: 1.5vh;
+}
+#btn-clima{
+    margin: 10px;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    background-color:rgba(143, 188, 143,0.3);
+    font-family: 'Architects Daughter', cursive;
+}
+/*Info preliminar  */
+#btn-reset{
+    margin: 10px;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    background-color:rgba(143, 188, 143,0.3);
+    font-family: 'Architects Daughter', cursive;
+}
+.muestra-1{
+    font-size: 2rem;
+    padding: 2vh;    
+    display: flex;
+    justify-content: space-evenly;
+}
+#Descrip{
+    text-transform: capitalize;
+}
+
+#btn-info{
+    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    background-color:rgba(143, 188, 143,0.3);
+    font-family: 'Architects Daughter', cursive;
+}
+/* Info completa */
+#info-1{
+    font-size: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+#info-1 div{
+    padding: 15px;
+}   
+#Descripcion{
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+/* Pie de página */
+footer{
+    width: 95%;
+    margin: auto;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgba(122, 114, 102, 0.507);
+    font-family: 'Limelight', cursive;
+    font-weight: 700;
+}
+
+/* Media Query */
+
+@media (max-width: 576px){
+/* Header */
+    .cabeza{
+        flex-wrap: wrap;
+    }
+    .cabeza2{
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .cabeza p{
+        font-size: 1.8rem;
+    }
+/* Panel de consulta - 1er Section */
+    #consulta-1{
+        padding: 1vh;
+    }
+    #preguntar{
+        font-size: 1.4rem;
+        margin: auto;
+    }
+    #input-ciudad{
+        font-size: 1rem;
+        margin: auto;
+    }
+/*Info preliminar  */
+    .muestra-1{
+        font-size: 1.5rem;
+        flex-flow: column nowrap;
+        text-align: start;
+    }
+    .muestra-1 br{
+        display: none;
+    }
+    .muestra-1 span{
+        margin: 10px 0px;
+    }
+    #Descrip{
+        text-transform: capitalize;
+    }
+    img{
+        width: 90px;
+    }
+    #btn-info{
+        margin: auto;
+    }
+/* Info completa */
+    #info-1{
+        font-size: 1.5rem;
+        justify-content:center;
+    }
+    #info-1 div br{
+        display: none;
+    }
+    #info-1 div{
+        margin: 15px;
+    }    
+    #Descripcion{
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+/* Header */
+    .cabeza2{
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cabeza p{
+        font-size: 2rem;
+    }
+/* Panel de consulta - 1er Section */
+    #consulta-1{
+        padding: 1vh;
+    }
+    #preguntar{
+        font-size: 1.6rem;
+        margin: auto;
+    }
+    #input-ciudad{
+        font-size: 1.2rem;
+        margin: auto;
+    }
+/*Info preliminar  */
+    .muestra-1{
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .muestra-1 span{
+        margin: 15px;
+    }
+    #Descrip{
+        text-transform: capitalize;
+    }
+    img{
+        width: 100px;
+    }
+    #btn-info{
+        margin: auto;
+    }
+/* Info completa */
+    #info-1{
+        font-size: 1.5rem;
+        justify-content:center;
+    }
+    #info-1 div br{
+        display: none;
+    }
+    #info-1 div{
+        margin: 15px;
+    }    
+    #Descripcion{
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+/* Header */
+    .cabeza2{
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    h2{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .cabeza p{
+        font-size: 2.2rem;
+    }
+/* Panel de consulta - 1er Section */
+    #preguntar{
+        font-size: 1.8rem;
+        margin: auto;
+    }
+    #input-ciudad{
+        font-size: 1.4rem;
+        margin: auto;
+    }
+/*Info preliminar  */
+    .muestra-1{
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .muestra-1 span{
+        margin: 20px;
+    }
+    #Descrip{
+        text-transform: capitalize;
+    }
+    img{
+        width: 100px;
+    }
+    #btn-info{
+        margin: auto;
+    }
+/* Info completa */
+    #info-1{
+        font-size: 1.5rem;
+        justify-content:center;
+    }
+    #info-1 div{
+        padding: 15px;
+    }   
+    #Descripcion{
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+/* Header */
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .cabeza p{
+        font-size: 2rem;
+    }
+}
